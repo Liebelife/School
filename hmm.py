@@ -162,7 +162,7 @@ else:
 ## prpsti pozadi
 PrpstPozadi = {}
 for delka in range(6,10):
-	pozadi = round(0.25**delka, 6)
+	pozadi = round( (1+0.25) ** delka, 4) # 1+0.25 kvuli porovnani s psti motivu (ten je pocitany v pseudocounts)
 	PrpstPozadi[delka] = pozadi
 PozadiPatternu = PrpstPozadi[DelkaPatternu]
 
